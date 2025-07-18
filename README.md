@@ -70,15 +70,13 @@ Add a FileProvider configuration to your `android/app/src/main/AndroidManifest.x
 </application>
 ```
 
-Create `android/app/src/main/res/xml/file_paths.xml`:
+Create `android/app/src/main/res/xml/file_paths.xml` and set relevant paths.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <paths xmlns:android="http://schemas.android.com/apk/res/android">
-    <external-path name="external_files" path="."/>
     <files-path name="files" path="."/>
     <cache-path name="cache" path="."/>
-    <external-cache-path name="external_cache" path="."/>
 </paths>
 ```
 
