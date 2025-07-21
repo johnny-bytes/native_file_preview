@@ -1,3 +1,8 @@
+## 1.0.1
+
+* Fixed deprecated code in example app.
+* Updated Flutter and Dart SDK constraints in `pubspec.yaml` for broader compatibility.
+
 ## 1.0.0
 
 * Initial release of native_file_preview plugin
