@@ -302,7 +302,9 @@ Charlie Wilson,32,Boston,Marketing Manager
                           margin: const EdgeInsets.only(bottom: 12),
                           child: ListTile(
                             leading: CircleAvatar(
-                              backgroundColor: fileItem.color.withOpacity(0.1),
+                              backgroundColor: fileItem.color.withValues(
+                                alpha: 0.1,
+                              ),
                               child: Icon(fileItem.icon, color: fileItem.color),
                             ),
                             title: Text(

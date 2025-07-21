@@ -1,11 +1,11 @@
 name: native_file_preview
 description: "A Flutter plugin that provides native file preview functionality for iOS and Android platforms."
 version: 1.0.0
-homepage: https://github.com/johnnybytes/native_file_preview
+homepage: https://github.com/johnny-bytes/native_file_preview
 
 environment:
-  sdk: ^3.8.1
-  flutter: ">=3.3.0"
+  sdk: ^3.6.0
+  flutter: ">=3.0.0"
 
 dependencies:
   flutter:
