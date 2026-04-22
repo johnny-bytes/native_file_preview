@@ -4,16 +4,16 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'native_file_preview'
-  s.version          = '0.0.1'
-  s.summary          = 'A new Flutter plugin project.'
+  s.version          = '1.0.1'
+  s.summary          = 'A Flutter plugin that provides native file preview functionality for iOS and Android platforms.'
   s.description      = <<-DESC
-A new Flutter plugin project.
+Native file preview plugin for Flutter. Displays files (PDF, images, documents, and more) using the platform's native preview controllers — QLPreviewController on iOS and the system viewer on Android — so previews look and behave exactly like the OS-level experience.
                        DESC
-  s.homepage         = 'http://example.com'
-  s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Your Company' => 'email@example.com' }
+  s.homepage         = 'https://github.com/johnny-bytes/native_file_preview'
+  s.license          = { :type => 'MIT', :file => '../LICENSE' }
+  s.author           = { 'Johnny Bytes GmbH' => 'info@johnnybytes.com' }
   s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*'
+  s.source_files = 'native_file_preview/Sources/native_file_preview/**/*.swift'
   s.dependency 'Flutter'
   s.platform = :ios, '12.0'
 
@@ -25,5 +25,5 @@ A new Flutter plugin project.
   # required reason APIs, update the PrivacyInfo.xcprivacy file to describe your
   # plugin's privacy impact, and then uncomment this line. For more information,
   # see https://developer.apple.com/documentation/bundleresources/privacy_manifest_files
-  # s.resource_bundles = {'native_file_preview_privacy' => ['Resources/PrivacyInfo.xcprivacy']}
+  # s.resource_bundles = {'native_file_preview_privacy' => ['native_file_preview/Sources/native_file_preview/PrivacyInfo.xcprivacy']}
 end
