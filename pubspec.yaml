@@ -4,8 +4,8 @@ version: 1.0.1
 homepage: https://github.com/johnny-bytes/native_file_preview
 
 environment:
-  sdk: ^3.6.0
-  flutter: ">=3.0.0"
+  sdk: ^3.11.0
+  flutter: ">=3.41.0"
 
 dependencies:
   flutter:
