@@ -1,0 +1,11 @@
+{
+  "name": "native_file_preview",
+  "private": true,
+  "version": "1.0.1",
+  "devDependencies": {
+    "semantic-release": "^24.0.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "semantic-release-replace-plugin": "^1.2.7"
+  }
+}
