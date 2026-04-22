@@ -15,7 +15,7 @@ Native file preview plugin for Flutter. Displays files (PDF, images, documents, 
   s.source           = { :path => '.' }
   s.source_files = 'native_file_preview/Sources/native_file_preview/**/*.swift'
   s.dependency 'Flutter'
-  s.platform = :ios, '12.0'
+  s.platform = :ios, '13.0'
 
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
