@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/johnny-bytes/native_file_preview/compare/v1.0.1...v1.1.0) (2026-04-27)
+
+
+### Features
+
+* add swift package manager support ([ca7d168](https://github.com/johnny-bytes/native_file_preview/commit/ca7d168594c4cd755f5c4e93580bf585b6bd12bd))
+
 ## 1.0.1
 
 * Fixed deprecated code in example app.
