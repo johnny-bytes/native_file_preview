@@ -35,7 +35,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  native_file_preview: ^1.0.0
+  native_file_preview: ^1.1.0
 ```
 
 Then run:
@@ -43,6 +43,15 @@ Then run:
 ```bash
 flutter pub get
 ```
+
+## Platform Support
+
+| Version | Flutter  | iOS   | Android |
+|---------|----------|-------|---------|
+| 1.1.0   | >=3.41.0 | 13.0  | 21      |
+| 1.0.x   | >=3.0.0  | 12.0  | 21      |
+
+*Note: Both versions are functionally identical; v1.1.0 adds Swift Package Manager support.*
 
 ## Platform Setup
 
