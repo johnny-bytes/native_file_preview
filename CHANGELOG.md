@@ -5,6 +5,12 @@
 
 * add swift package manager support ([ca7d168](https://github.com/johnny-bytes/native_file_preview/commit/ca7d168594c4cd755f5c4e93580bf585b6bd12bd))
 
+### Platform Versions
+
+* Flutter: `>=3.41.0`
+* iOS: minimum deployment target `13.0`
+* Android: minimum SDK `21`
+
 ## 1.0.1
 
 * Fixed deprecated code in example app.
