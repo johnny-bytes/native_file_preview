@@ -15,13 +15,35 @@ import org.mockito.Mockito
 
 internal class NativeFilePreviewPluginTest {
   @Test
-  fun onMethodCall_getPlatformVersion_returnsExpectedValue() {
+  fun onMethodCall_unknownMethod_isNotImplemented() {
     val plugin = NativeFilePreviewPlugin()
 
-    val call = MethodCall("getPlatformVersion", null)
+    val call = MethodCall("someUnknownMethod", null)
     val mockResult: MethodChannel.Result = Mockito.mock(MethodChannel.Result::class.java)
     plugin.onMethodCall(call, mockResult)
 
-    Mockito.verify(mockResult).success("Android " + android.os.Build.VERSION.RELEASE)
+    Mockito.verify(mockResult).notImplemented()
+  }
+
+  @Test
+  fun onMethodCall_previewFileWithoutArguments_returnsInvalidFilePath() {
+    val plugin = NativeFilePreviewPlugin()
+
+    val call = MethodCall("previewFile", null)
+    val mockResult: MethodChannel.Result = Mockito.mock(MethodChannel.Result::class.java)
+    plugin.onMethodCall(call, mockResult)
+
+    Mockito.verify(mockResult).error("INVALID_FILE_PATH", "Invalid file path", null)
+  }
+
+  @Test
+  fun onMethodCall_previewFileWithoutActivity_returnsNoActivity() {
+    val plugin = NativeFilePreviewPlugin()
+
+    val call = MethodCall("previewFile", mapOf("file" to "/some/file.pdf"))
+    val mockResult: MethodChannel.Result = Mockito.mock(MethodChannel.Result::class.java)
+    plugin.onMethodCall(call, mockResult)
+
+    Mockito.verify(mockResult).error("NO_ACTIVITY", "No activity available", null)
   }
 }
