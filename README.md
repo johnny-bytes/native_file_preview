@@ -35,7 +35,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  native_file_preview: ^1.1.0
+  native_file_preview: ^1.2.0
 ```
 
 Then run:
@@ -48,10 +48,11 @@ flutter pub get
 
 | Version | Flutter  | iOS   | Android |
 |---------|----------|-------|---------|
+| 1.2.0   | >=3.44.0 | 13.0  | 21      |
 | 1.1.0   | >=3.41.0 | 13.0  | 21      |
 | 1.0.x   | >=3.0.0  | 12.0  | 21      |
 
-*Note: Both versions are functionally identical; v1.1.0 adds Swift Package Manager support.*
+*Note: All versions are functionally identical; v1.1.0 adds Swift Package Manager support, v1.2.0 migrates the Android build to built-in Kotlin so apps can build with Android Gradle Plugin 9.*
 
 ## Platform Setup
 
